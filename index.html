@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <style>
+        body {
+            height: 100%;
+        }
+
+        .main {
+            height: 100%;
+            width: 100%;
+        }
+
+        .section {
+            height: 10%;
+            width: 100%;
+            padding: 1%;
+            padding-left: 2%;
+            padding-right: 2%;
+            box-sizing: border-box;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .flex2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .grid {
+            display: grid;
+            height: 70%;
+            width: 100%;
+            grid-template-columns: 1fr 3fr 10fr 5fr 1fr 1fr 1fr;
+            grid-template-rows: repeat(11, auto);
+        }
+
+        .grid2 {
+            display: grid;
+            height: 50px;
+            width: 35%;
+            grid-template-columns: repeat(13, 1fr);
+            color: blue;
+        }
+
+        button {
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 5%;
+            width: 8%;
+            height: 50px;
+        }
+
+        .button2 {
+            color: black;
+            width: 75%;
+            height: 40%;
+        }
+
+        .yellow {
+            background-color: gold;
+        }
+
+        .cyan {
+            background-color: cyan;
+        }
+
+        .red {
+            background-color: rgb(225, 23, 23);
+        }
+
+        .item {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bold {
+            font-weight: bolder;
+        }
+
+        .grey {
+            background-color: rgb(209, 205, 205);
+        }
+
+        .border {
+            border: 1px solid rgb(218, 208, 208);
+        }
+
+        @media(max-width: 680px) {
+             body {
+                width: 100vw;
+             }
+
+             .grid {
+                grid-template-columns: repeat(7, auto);
+             }
+
+
+            p {
+                font-size: 10px;
+            }
+
+            button {
+                width: 40%;
+            }
+
+            .button2 {
+                font-size: 8px;
+            }
+
+            .flex {
+                justify-content: space-around;
+            }
+
+            .grid2 {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+         <div class="section grey">
+            <h1>Users</h1>
+         </div>
+         <div class="section flex" style="align-items: center;">
+             <h2>Manage your users here.</h2>
+             <button>Add new user</button>
+         </div>
+         <div class="grid">
+            <div class="item flex2 grey">
+                <p class="bold">#</p>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">Name</p>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">Email</p>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">Username</p>
+            </div>
+            <div class="item flex2 grey">
+                
+            </div>
+            <div class="item flex2 grey">
+                
+            </div>
+            <div class="item flex2 grey">
+                
+            </div>
+            <div class="item flex2">
+                <p class="bold">1</p>
+            </div>
+            <div class="item flex2">
+                <p>Eoghan Bran</p>
+            </div>
+            <div class="item flex2">
+                <p>kce9@hotmail.red</p>
+            </div>
+            <div class="item flex2">
+                <p>thelionkingmilkshake</p>
+            </div>
+            <div class="item flex2">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">2</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>Tia Phillida</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>rosari15@inkworlds.com</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>savannahdorothyshrek</p>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2 grey">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2">
+                <p class="bold">3</p>
+            </div>
+            <div class="item flex2">
+                <p>Charnette Caileigh</p>
+            </div>
+            <div class="item flex2">
+                <p>pupsvip@mobilebankapp.org</p>
+            </div>
+            <div class="item flex2">
+                <p>lionsharkgreenpepper</p>
+            </div>
+            <div class="item flex2">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">4</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>Tammara Artair</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>catytiamo@ltlseguridad.com</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>thebigsleephardrolls</p>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2 grey">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2">
+                <p class="bold">5</p>
+            </div>
+            <div class="item flex2">
+                <p>Kassie Meirion</p>
+            </div>
+            <div class="item flex2">
+                <p>edisonodessa@mycartzpro.com/p>
+            </div>
+            <div class="item flex2">
+                <p>croissantwinepudding</p>
+            </div>
+            <div class="item flex2">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">6</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>Mayme Montgomery</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>jtudela@h0tmal.com</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>sn1987abrightmuffins</p>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2 grey">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2">
+                <p class="bold">7</p>
+            </div>
+            <div class="item flex2">
+                <p>Tigerlily Derren</p>
+            </div>
+            <div class="item flex2">
+                <p>pups42@yt-google.com</p>
+            </div>
+            <div class="item flex2">
+                <p>toystoryteacroissant</p>
+            </div>
+            <div class="item flex2">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">8</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>Caelan Clarinda</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>sixerstqy8@forumbens.space</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>parrotinstrumentsnow</p>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2 grey">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2">
+                <p class="bold">9</p>
+            </div>
+            <div class="item flex2">
+                <p>Debbie Banks</p>
+            </div>
+            <div class="item flex2">
+                <p>frank88fpd@lamedicalbilling.com</p>
+            </div>
+            <div class="item flex2">
+                <p>teabanjobirthdaycake</p>
+            </div>
+            <div class="item flex2">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+            <div class="item flex2 grey">
+                <p class="bold">10</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>Jane Rupert</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>adt1024@code-gmail.com</p>
+            </div>
+            <div class="item flex2 grey">
+                <p>romanholidayreindeer</p>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 yellow">Show</button>
+            </div>
+            <div class="item flex2 grey">
+                <button class="button2 cyan">Edit</button>
+            </div>
+            <div class="item flex2 grey">
+                <button style="color: white;" class="button2 red">Delete</button>
+            </div>
+         </div>
+         <div class="section">
+              <div class="grid2">
+                <div class="item border flex2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M15.293 3.293 6.586 12l8.707 8.707 1.414-1.414L9.414 12l7.293-7.293-1.414-1.414z"/></svg>
+                </div>
+                <div class="item border flex2">
+                   <p>1</p>
+                </div>
+                <div class="item border flex2">
+                    <p>2</p>
+                 </div>
+                 <div class="item border flex2">
+                    <p>3</p>
+                 </div>
+                 <div class="item border flex2">
+                    <p>4</p>
+                 </div>
+                 <div class="item border flex2">
+                    <p>5</p>
+                 </div>
+                 <div class="item border flex2">
+                    <p>6</p>
+                 </div>
+                 <div class="item border flex2">
+                     <p>7</p>
+                  </div>
+                  <div class="item border flex2">
+                     <p>8</p>
+                  </div>
+                  <div class="item border flex2">
+                     <p>9</p>
+                  </div>
+                  <div class="item border flex2">
+                     <p>10</p>
+                  </div>
+                  <div class="item border flex2">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"><path d="M7.293 4.707 14.586 12l-7.293 7.293 1.414 1.414L17.414 12 8.707 3.293 7.293 4.707z"/></svg>
+                 </div>
+              </div>
+         </div>
+    </div>
+</body>
+</html>
